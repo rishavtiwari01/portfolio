@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Rishav — Creative Developer &amp; Digital Architect</title>
+<meta name="description" content="Portfolio of Rishav — Creative Developer & Digital Architect.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<!-- Preloader — blocks view until all 151 frames are decoded -->
+<div id="preloader">
+  <div class="preloader__content">
+    <span class="preloader__label">Initializing</span>
+    <div class="preloader__bar"><div class="preloader__bar-fill" id="preloader-fill"></div></div>
+    <span class="preloader__count" id="preloader-count">0%</span>
+  </div>
+</div>
+
+<!-- Canvas engine: fixed background, sits behind everything -->
+<canvas id="frame-canvas" aria-hidden="true">Your browser does not support canvas rendering.</canvas>
+<div class="canvas-overlay" aria-hidden="true"></div>
+
+<main id="content">
+
+  <!-- 1. Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__inner">
+      <h1 class="hero__title">RISHAV</h1>
+      <p class="hero__subtitle">Creative Developer &amp; Digital Architect</p>
+    </div>
+    <button class="scroll-cue" id="scroll-cue" type="button" aria-label="Scroll to explore the work section">
+      <span>Scroll to explore</span>
+      <span class="scroll-cue__line"><span class="scroll-cue__dot"></span></span>
+    </button>
+  </section>
+
+  <!-- 2. The Work -->
+  <section class="work" id="work" aria-label="Selected work">
+    <div class="work__header">
+      <h2><em>Selected Work</em></h2>
+    </div>
+
+    <div class="work__grid">
+
+      <a class="project-card" href="./projects/fitness-hub/index.html" target="_blank" rel="noopener">
+        <div class="project-card__glass">
+          <div>
+            <span class="project-card__eyebrow">Fitness &amp; Wellness</span>
+            <h3 class="project-card__title">Apex Fitness Grid</h3>
+            <p class="project-card__desc">A high-energy, premium digital experience designed to attract high-paying clients for gyms and fitness centers.</p>
+          </div>
+          <span class="project-card__link">View Project →</span>
+        </div>
+      </a>
+
+      <a class="project-card" href="./projects/premium-cafe/index.html" target="_blank" rel="noopener">
+        <div class="project-card__glass">
+          <div>
+            <span class="project-card__eyebrow">Hospitality</span>
+            <h3 class="project-card__title">Nocturne Café</h3>
+            <p class="project-card__desc">A cinematic and moody web presence tailored for luxury cafes, fine-dining, and hospitality brands.</p>
+          </div>
+          <span class="project-card__link">View Project →</span>
+        </div>
+      </a>
+
+      <a class="project-card" href="./projects/hospital/index.html" target="_blank" rel="noopener">
+        <div class="project-card__glass">
+          <div>
+            <span class="project-card__eyebrow">Healthcare Systems</span>
+            <h3 class="project-card__title">Lumina Healthcare</h3>
+            <p class="project-card__desc">A clean, trust-building platform with integrated booking systems for hospitals and large clinics.</p>
+          </div>
+          <span class="project-card__link">View Project →</span>
+        </div>
+      </a>
+
+      <a class="project-card" href="./projects/clinick/index.html" target="_blank" rel="noopener">
+        <div class="project-card__glass">
+          <div>
+            <span class="project-card__eyebrow">Private Practice</span>
+            <h3 class="project-card__title">Aura Clinic</h3>
+            <p class="project-card__desc">A minimalist and approachable digital interface designed for private medical practitioners.</p>
+          </div>
+          <span class="project-card__link">View Project →</span>
+        </div>
+      </a>
+
+      <a class="project-card" href="./projects/eco/index.html" target="_blank" rel="noopener">
+        <div class="project-card__glass">
+          <div>
+            <span class="project-card__eyebrow">Sustainability</span>
+            <h3 class="project-card__title">Eco Vision</h3>
+            <p class="project-card__desc">A modern, sustainable web design concept for environmental, NGO, and green-tech brands.</p>
+          </div>
+          <span class="project-card__link">View Project →</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- 3. Direct Contact -->
+  <section class="contact" id="contact" aria-label="Contact">
+    <p class="contact__text"><em>Let's build something exceptional.</em></p>
+    <a class="contact__cta" href="https://wa.me/919243085416" target="_blank" rel="noopener">
+      <span>Chat on WhatsApp</span>
+    </a>
+  </section>
+
+</main>
+
+<!-- GSAP core + ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<script src="./js/canvas-engine.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
